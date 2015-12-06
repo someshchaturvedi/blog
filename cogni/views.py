@@ -7,8 +7,12 @@ class index(generic.ListView):
   template_name = 'cogni/index.html'
 
   def get_queryset(self):
-    return blog.objects.order_by('-id')[:3]
+    return blog.objects.order_by('-id')[:5]
 
 class DetailView(generic.DetailView):
   model = blog
-  template_name = 'cogni/detail.view'
+  template_name = 'cogni/post.html'
+
+def about(request):
+  return render(request , 'cogni/about.html')
+
