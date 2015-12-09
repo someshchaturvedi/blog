@@ -6,7 +6,7 @@ class blog(models.Model):
   title = models.CharField(max_length = 50)
   subtitle = models.CharField(max_length = 50 , default = "this is a good blog")
   text = models.CharField(max_length = 500)
-  img = models.ImageField(null = True)
+  img = models.ImageField(null = True , upload_to = "blog_pics")
   def __unicode__(self):
     return self.title
 

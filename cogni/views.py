@@ -7,7 +7,7 @@ class index(generic.ListView):
   template_name = 'cogni/index.html'
 
   def get_queryset(self):
-    return blog.objects.order_by('-id')[:5]
+    return blog.objects.order_by('-id')
 
 class DetailView(generic.DetailView):
   model = blog
