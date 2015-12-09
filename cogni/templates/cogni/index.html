@@ -93,9 +93,10 @@
 		<!-- blog list starts here -->
 		{% if latest_blog_list %}
 		{% for blog in latest_blog_list %}	
-		 <div class="post-preview">
+		 <div class="post-preview"  >
+
                     <a href="{{blog.id}}">
-                        <h2 class="post-title">{{ blog.title }}
+                        <h2 class="post-title"   >{{ blog.title }}
                                                    </h2>
                         <h3 class="post-subtitle">{{blog.subtitle}}
                                                    </h3>
